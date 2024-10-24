@@ -28,8 +28,15 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://sherllin.github.io/img/p6/001.jpg">
 <meta property="og:image" content="http://sherllin.github.io/img/p6/002.jpg">
+<meta property="og:image" content="http://sherllin.github.io/img/p6/003.jpg">
+<meta property="og:image" content="http://sherllin.github.io/img/p6/004.jpg">
+<meta property="og:image" content="http://sherllin.github.io/img/p6/005.jpg">
+<meta property="og:image" content="http://sherllin.github.io/img/p6/006.jpg">
+<meta property="og:image" content="http://sherllin.github.io/img/p6/007.jpg">
+<meta property="og:image" content="http://sherllin.github.io/img/p6/008.jpg">
+<meta property="og:image" content="http://sherllin.github.io/img/p6/009.jpg">
 <meta property="article:published_time" content="2024-10-08T12:14:45.000Z">
-<meta property="article:modified_time" content="2024-10-24T06:43:50.497Z">
+<meta property="article:modified_time" content="2024-10-24T08:26:13.675Z">
 <meta property="article:author" content="Sherllin">
 <meta property="article:tag" content="中级软考">
 <meta name="twitter:card" content="summary_large_image">
@@ -239,7 +246,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          656 字
+          1.2k 字
         
       </span>
     
@@ -250,7 +257,7 @@
         
         
         
-          6 分钟
+          10 分钟
         
       </span>
     
@@ -330,7 +337,7 @@
 <li>指令和数据以同等地位存于存储器，按地址寻访</li>
 <li>指令由操作码和地址码构成</li>
 </ul>
-<p><code>主存储器</code><br><img src="/img/p6/001.jpg" srcset="/img/loading.gif" lazyload alt="图1" title="图1"></p>
+<p><code>主存储器</code><br><img src="/img/p6/001.jpg" srcset="/img/loading.gif" lazyload alt="主存储器" title="主存储器"></p>
 <ul>
 <li>MAR-address-地址寄存器</li>
 <li>MDR-data-数据寄存器</li>
@@ -343,7 +350,55 @@
 </blockquote>
 </li>
 </ul>
-<p><code>CPU运算器（运算器+控制器）</code><br><img src="/img/p6/002.jpg" srcset="/img/loading.gif" lazyload alt="图2" title="图2"></p>
+<p><code>CPU运算器</code><br><img src="/img/p6/002.jpg" srcset="/img/loading.gif" lazyload alt="运算器" title="运算器"></p>
+<ul>
+<li>ACC累加器</li>
+<li>MQ乘商寄存器</li>
+<li>X通用的操作数寄存器</li>
+<li>ALU算术逻辑单元</li>
+<li>DR数据缓存寄存器</li>
+<li>PSW状态条件寄存器，保存指令运行状态</li>
+</ul>
+<p><code>CPU控制器</code><br><img src="/img/p6/003.jpg" srcset="/img/loading.gif" lazyload alt="控制器" title="控制器"></p>
+<ul>
+<li>CU控制单元：分析指令，给出控制信号</li>
+<li>PC程序计数器：自动加一</li>
+<li>IR指令寄存器</li>
+<li>AR地址寄存器</li>
+<li>ID指令译码器</li>
+</ul>
+<p><code>计算机体系结构（Flynn分类法）</code><br><img src="/img/p6/004.jpg" srcset="/img/loading.gif" lazyload alt="体系结构" title="体系结构"></p>
+<p><code>指令系统（指令）</code></p>
+<ul>
+<li>指令（机器指令）是计算机运行的最小功能单位</li>
+<li>一台计算机所有的指令构成其指令系统，又称指令集</li>
+<li>指令格式：操作码（OP）+地址码（A）</li>
+</ul>
+<p><code>指令的七种寻址方式</code></p>
+<ol>
+<li>立即寻址：地址码就是操作数</li>
+<li>寄存器寻址：地址码是存放操作数的寄存器的地址</li>
+<li>直接寻址：地址码是操作数的内存地址</li>
+<li>寄存器间接寻址：地址码是寄存器的地址，寄存器里是操作数的内存地址</li>
+<li>寄存器相对寻址</li>
+<li>基址加变址寻址方式</li>
+<li>相对基址加变址寻址</li>
+</ol>
+<p><code>复杂(Complex)指令集计算机CISC和精简(Reduced)指令集计算机RISC</code><br><img src="/img/p6/005.jpg" srcset="/img/loading.gif" lazyload alt="指令集计算机" title="指令集计算机"></p>
+<p><code>指令的流水处理和计算</code><br><img src="/img/p6/006.jpg" srcset="/img/loading.gif" lazyload alt="指令控制方式" title="指令控制方式"><br><img src="/img/p6/007.jpg" srcset="/img/loading.gif" lazyload alt="流水线周期和总时间计算" title="流水线周期和总时间计算"><br><img src="/img/p6/008.jpg" srcset="/img/loading.gif" lazyload alt="吞吐率计算" title="吞吐率计算"><br><img src="/img/p6/009.jpg" srcset="/img/loading.gif" lazyload alt="加速比计算" title="加速比计算"></p>
+<p><code>输入输出技术（CPU与外设之间数据传送方式</code></p>
+<ol>
+<li>直接程序控制方式<br>整个输入输出过程是在CPU执行程序的控制下完成，又分</li>
+</ol>
+<ul>
+<li>无条件传送方式：无条件与CPU交换数据</li>
+<li>程序查询方式：先通过CPU查询外设状态，准备好后再与CPU交换数据</li>
+</ul>
+<ol start="2">
+<li>中断方式<br>利用中断机制，使I&#x2F;O与外设交换数据时，CPU无需等待，也不用查询I&#x2F;O状态</li>
+<li>直接存储器存取方式（DMA）<br>direct memory access<br>在内存与I&#x2F;O设备直接传送数据，不需要CPU任何干涉</li>
+<li>输入&#x2F;输出处理机（不常考）<br>IOP是一个专用处理机，根据主机的I&#x2F;O命令，完成对外设数据的输入&#x2F;输出</li>
+</ol>
 
                 
               </div>
