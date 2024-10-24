@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>软考备考</title>
+    <link href="/2024/10/08/post6/"/>
+    <url>/2024/10/08/post6/</url>
+    
+    <content type="html"><![CDATA[<p>开始备考时间：10&#x2F;22</p><h3 id="计算机内数据的表示"><a href="#计算机内数据的表示" class="headerlink" title="计算机内数据的表示"></a>计算机内数据的表示</h3><p><code>基本硬件</code><br>CPU（引脚），内存条，硬盘等</p><p><code>进制转换BODH</code><br>R进制转十进制用权重<br>十进制转R进制用短除法<br>二进制转十六进制时四位一组<br>十六进制转二进制一个对四个</p><p><code>真值</code></p><p><code>机器数</code><br>无符号数，有符号数（原，反，补，移）0正1负</p><p><code>机器字长</code><br>如一位符号位，七位数值位</p><p><code>原码</code><br>符号位加数值位，如[X]&#x3D;1,0010011,0有两种表示，机器字长为n+1，原码表示范围为-（2^n-1）到2^n-1</p><p><code>反码</code><br>正数反码与原码一样，负数的话将原码数值位全部取反就是反码。相同机器字长，表示的整数范围与原码一样</p><p><code>补码</code><br>正数补码和原码一样，负数的补码是反码末位加一（考虑进位），原码和补码不管谁转谁都是数值位按位取反，末位加一，0的表示唯一，机器字长为n+1，表示范围2^n到2^n-1</p><p><code>移码</code><br>补码符号位取反，表示范围与补码一致</p><p><code>定点数</code><br>小数点位置固定不变的数，分定点整数（0,0101.）和定点小数（0,.1000）</p><p><code>浮点数</code><br>小数点位置不固定<br>N&#x3D;M*R^E<br>N是浮点数，M是尾数，R是基数（进制），E是阶码<br>阶码决定数值范围，尾数决定数值精度</p><p><code>奇偶校验</code><br>在编码中加入一位校验位，是1的个数变为奇数（奇校验），只能发现错误</p><p><code>循环冗余校验</code></p><p><code>海明码</code><br>在数据位之间插入k位校验码，能检错纠错，数据位如果为n位，需要满足2^k-1&gt;&#x3D;n+k</p><h3 id="计算机系统组成"><a href="#计算机系统组成" class="headerlink" title="计算机系统组成"></a>计算机系统组成</h3><p><code>冯诺依曼计算机</code></p><ul><li>输入输出设备、控制器、存储器、运算器</li><li>指令和数据以同等地位存于存储器，按地址寻访</li><li>指令由操作码和地址码构成</li></ul><p><code>主存储器</code><br><img src="/img/p6/001.jpg" alt="图1" title="图1"></p><ul><li>MAR-address-地址寄存器</li><li>MDR-data-数据寄存器</li><li>存储元：存储二进制的电子元件，每个存储元存1bit</li><li>存储单元：由存储元构成，每个单元存储一串二进制代码</li><li>存储字：存储单元中二进制代码的组合</li><li>存储字长：存储单元中二进制代码位数</li><li>4字节（Byte）&#x3D;32比特（bit）<blockquote><p>举例说明：MAR&#x3D;4，MDR&#x3D;16<br>则有2^4个存储单元，每个存储单元的存储字长为16位（bit）</p></blockquote></li></ul><p><code>CPU运算器（运算器+控制器）</code><br><img src="/img/p6/002.jpg" alt="图2" title="图2"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>学习资料</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>中级软考</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>明日方舟小人素材获取教程（保姆级）</title>
     <link href="/2024/10/06/post5/"/>
     <url>/2024/10/06/post5/</url>
